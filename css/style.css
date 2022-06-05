@@ -1,16 +1,17 @@
 /* Box Model Hack */
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
+	font-family: "Source Sans Pro", sans-serif;
 }
 
 /* Clear fix hack */
 .clearfix:after {
-     content: ".";
-     display: block;
-     clear: both;
-     visibility: hidden;
-     line-height: 0;
-     height: 0;
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
 }
 
 .clear {
@@ -18,32 +19,140 @@
 }
 
 /******************************************
+/* COLOUR STYLES
+/*******************************************/
+madeUp {
+	color: #eeeded;
+	color: #5c6e91;
+	color: #8f384d;
+	color: #dd9866;
+}
+
+/******************************************
 /* BASE STYLES
 /*******************************************/
 
 body {
-
+	display: block;
+	margin: auto;
+	background-color: #dd9866;
 }
-
-
 
 /******************************************
 /* LAYOUT
 /*******************************************/
-img{
-  display: block;
-  margin: 0 auto;
-  height: 300px;
-}
-
-header {
-
-}
-
-footer {
-
+img {
+	display: block;
+	margin: 0 auto;
+	height: 300px;
+	margin-top: 30px;
 }
 
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+
+body button.button {
+	min-width: 130px;
+	height: 40px;
+	color: #eeeded;
+	padding: 5px 10px;
+	font-weight: bold;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	position: relative;
+	display: block;
+	outline: none;
+	border-radius: 5px;
+	border: 2px solid #8f384d;
+	background: #8f384d;
+	margin: 10px auto;
+}
+button.button:hover {
+	background: #eeeded;
+	color: #8f384d;
+	margin: 20px auto;
+	height: 80px;
+}
+
+label {
+	font-size: 2em;
+	display: block;
+	text-align: center;
+}
+
+body select#animals {
+	width: 50%;
+	height: 50px;
+	font-size: 2em;
+	line-height: 50px;
+	padding: 5px 10px;
+	border: 2px solid #8f384d;
+	border-radius: 5px;
+	display: block;
+	margin: 0 auto;
+	font-weight: 700;
+	outline: none;
+	color: #eeeded;
+	text-align: center;
+	background: #5c6e91;
+}
+
+h1 {
+	font-size: 2em;
+	font-weight: 700;
+	color: #8f384d;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+h2 {
+	font-size: 5em;
+	font-weight: 700;
+	color: #8f384d;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+h3 {
+	font-size: 1.5em;
+	font-weight: 400;
+	color: #8f384d;
+	margin: 0;
+	padding: 30px 30%;
+	text-align: center;
+}
+
+ul {
+	list-style: none;
+	line-height-step: 30;
+}
+
+#factoids {
+	text-align: left;
+	font-size: 1.5em;
+	font-weight: 400;
+	line-height: 150%;
+	color: #8f384d;
+	display: block;
+	margin: 0 30%;
+	/* padding: 10px 30%; */
+}
+
+#factoids .factHeads {
+	font-weight: 700;
+	color: #000;
+}
+
+#animalCaption {
+	text-transform: uppercase;
+	font-size: 3em;
+	font-weight: 700;
+
+	color: #8f384d;
+	margin: 0;
+	padding: 30px 30%;
+	text-align: center;
+}

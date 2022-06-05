@@ -7,6 +7,13 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 
 		<title>flatufacts test app</title>
+		<!-- external fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
 
 		<!-- external CSS link -->
 		<link rel="stylesheet" href="css/normalize.css" />
@@ -17,9 +24,9 @@
 
 		<h2>Does it Fart?</h2>
 
-		<h3>select from pulldown or choose random</h3>
+		<!-- <h3>select from pulldown or choose random</h3> -->
 
-		<label for="animals">Choose an Animal:</label>
+		<label for="animals">select from pulldown or choose random</label>
 
 		<select name="animals" id="animals">
 			<option value="random">Random Animal</option>
@@ -113,21 +120,39 @@
 		</select>
 
 		<!-- <input type="text" name="" value=""> -->
-		<button type="button" name="button" id="getButton">Get Flatufact</button>
+		<button type="button" name="button" id="getButton" class="button">
+			Get Flatufact
+		</button>
 
 		<div class="pics-right">
 			<img src="" alt="image here" class="border" id="animalImage" />
 			<p class="caption" id="animalCaption">Photo</p>
 		</div>
-
-		<ul class="animalFactsList">
-			<li><span>Animal name: </span><span id="animalName"></span></li>
-			<li><span>Scientific name: </span><span id="scientificName"></span></li>
-			<li><span>Does it fart?: </span><span id="doesItFart"></span></li>
-			<li><span>Notes: </span><span id="notes"></span></li>
-			<li><span>Research links: </span><span id="research"></span></li>
-			<li><span>Fartoligist: </span><span id="fartoligist"></span></li>
-		</ul>
+		<section>
+			<ul class="animalFactsList" id="factoids">
+				<li>
+					<span class="factHeads">Animal name: </span
+					><span id="animalName"></span>
+				</li>
+				<li>
+					<span class="factHeads">Scientific name: </span
+					><span id="scientificName"></span>
+				</li>
+				<li>
+					<span class="factHeads">Does it fart?: </span
+					><span id="doesItFart"></span>
+				</li>
+				<li><span class="factHeads">Notes: </span><span id="notes"></span></li>
+				<li>
+					<span class="factHeads">Research links: </span
+					><span id="research"></span>
+				</li>
+				<li>
+					<span class="factHeads">Fartoligist: </span
+					><span id="fartoligist"></span>
+				</li>
+			</ul>
+		</section>
 
 		<script type="text/javascript" src="js/main.js"></script>
 	</body>
