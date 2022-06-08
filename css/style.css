@@ -25,12 +25,6 @@ font-family: 'Work Sans', sans-serif;
 	--grid: minmax(1em, 10%) minmax(10rem, 22ch) minmax(10rem, 23ch) minmax(1em, 3fr) max-content;
 }
 
-/* Box Model Hack */
-/* * {
-	box-sizing: border-box;
-	font-family: "Source Sans Pro", sans-serif;
-} */
-
 /* Clear fix hack */
 .clearfix:after {
 	content: ".";
@@ -60,19 +54,12 @@ madeUp {
 /* BASE STYLES
 /*******************************************/
 
-/* body {
-	display: block;
-	margin: auto;
-	background-color: #dd9866;
-} */
-
 body {
 	margin: 0;
 	font-family: "Work Sans", sans-serif;
 	font-size: 1.125rem;
 	color: var(--clr-dark);
 	line-height: 1.6;
-	/* background: gray; */
 }
 
 header {
@@ -96,10 +83,8 @@ header {
 	flex-direction: row;
 	flex-wrap: wrap;
 	width: 100%;
-	/* align-content: center; */
 	justify-content: center;
-	/* background-color: #48acf0; */
-	/* justify-content: space-around; */
+
 }
 
 .column {
@@ -129,6 +114,7 @@ header {
 }
 
 .buttonBox {
+	margin: 0;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -140,7 +126,6 @@ img.heroAnimal {
 	display: flex;
 	justify-content: flex-end;
 	margin: 0 auto;
-	/* max-height: 480px; */
 	max-width: 100%;
 	border-radius: 50%;
 	background-size: cover;
@@ -165,19 +150,6 @@ body {
 	max-height: 4em;
 }
 
-/* Rectangle 3 */
-
-/* .backrangle {
-	position: absolute;
-	width: 858px;
-	height: 224px;
-	left: 230px;
-	top: 508px;
-
-	background: #db995a;
-	opacity: 0.5;
-	border-radius: 32px;
-} */
 
 /******************************************
 /* ADDITIONAL STYLES
@@ -253,6 +225,7 @@ h2 {
 	font-weight: 700;
 	color: #654236;
 	margin-top: 100px;
+	margin-bottom: 0;
 	padding: 0;
 	text-align: center;
 	text-shadow: #FFF 0px 0px 10px;
