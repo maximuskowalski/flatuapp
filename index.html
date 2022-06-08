@@ -1,159 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="description" content="Facts about Farts" />
-		<meta name="keywords" content="fart, fartologist, farter" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-		<title>flatufacts test app</title>
-		<!-- external fonts -->
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap"
-			rel="stylesheet"
-		/>
+<head>
+	<meta charset="utf-8" />
+	<meta name="description" content="Facts about Farts" />
+	<meta name="keywords" content="fart, fartologist, farter" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-		<!-- external CSS link -->
-		<link rel="stylesheet" href="css/normalize.css" />
-		<link rel="stylesheet" href="css/style.css" />
-	</head>
-	<body>
-		<h1>flatulance facts</h1>
+	<title>flatufacts test app</title>
+	<!-- external fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link
+		href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&family=Source+Code+Pro:wght@300;400;700&family=Spicy+Rice&family=Work+Sans:wght@400;700;900&display=swap"
+		rel="stylesheet" />
 
+	<!-- external CSS link -->
+	<link rel="stylesheet" href="css/normalize.css" />
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+	<!-- header -->
+	<header class="sticky">
+		<!-- <h1>flatufacts</h1> -->
+		<img src="images/flatufacts.png" alt="" class="logo" />
+	</header>
+
+	<!-- main -->
+
+	<main class="main main--sci">
 		<h2>Does it Fart?</h2>
 
-		<!-- <h3>select from pulldown or choose random</h3> -->
+		<section class="buttonBox">
+			<!-- input select -->
+			<label for="animals">select:</label>
 
-		<label for="animals">select from pulldown or choose random</label>
+			<select name="animals" id="animals" class="pulldown">
+				<option value="random">Random Animal</option>
+				<option value="african wild dogs">African wild dogs</option>
+				<option value="aliens">Aliens</option>
+				<option value="american badger">American Badger</option>
+				<option value="ammonite">Ammonite</option>
+				<option value="arachnids">Arachnids</option>
+				<option value="baboons">Baboons</option>
+				<option value="bats">Bats</option>
+				<option value="bearded dragon">Bearded Dragon</option>
+				<option value="birds">Birds</option>
+				<option value="black spinytail iguana">Black Spinytail Iguana</option>
+				<option value="blue mussels">Blue mussels</option>
+				<option value="bobcats">Bobcats</option>
+				<option value="bristle worms">Bristle worms</option>
+				<option value="burchells zebra">Burchell's zebra</option>
+				<option value="burmese python">Burmese python</option>
+				<option value="camel">Camel</option>
+				<option value="cheetah">Cheetah</option>
+				<option value="chimpanzees">Chimpanzees</option>
+				<option value="cockroaches">Cockroaches</option>
+				<option value="colobine monkeys">Colobine monkeys</option>
+				<option value="common whelks">Common whelks</option>
+				<option value="copperhead">Copperhead</option>
+				<option value="domestic cat">Domestic cat</option>
+				<option value="domestic goat">Domestic goat</option>
+				<option value="domestic hedgehogs">Domestic hedgehogs</option>
+				<option value="domestic pigs">Domestic pigs</option>
+				<option value="domestic sheep">Domestic sheep</option>
+				<option value="domesticated dogs">Domesticated Dogs</option>
+				<option value="elephants">Elephants</option>
+				<option value="european oysters">European oysters</option>
+				<option value="fancy goldfish">Fancy goldfish</option>
+				<option value="freshwater mussels">Freshwater mussels</option>
+				<option value="frogs">Frogs</option>
+				<option value="crested geckos">crested geckos</option>
+				<option value="giraffe">giraffe</option>
+				<option value="gorillas">gorillas</option>
+				<option value="gray fox">gray fox</option>
+				<option value="green iguana">Green Iguana</option>
+				<option value="grizzly bear">Grizzly bear</option>
+				<option value="guinea pigs">Guinea Pigs</option>
+				<option value="herring">herring</option>
+				<option value="horse">horse</option>
+				<option value="humans">humans</option>
+				<option value="isopods">Isopods (marine and terrestrial)</option>
+				<option value="lagomorphs">lagomorphs</option>
+				<option value="lemurs">lemurs</option>
+				<option value="lion">lion</option>
+				<option value="manatees">manatees</option>
+				<option value="mastodon">mastodon</option>
+				<option value="millipedes">millipedes</option>
+				<option value="moonsnails">moonsnails</option>
+				<option value="mustelids">mustelids</option>
+				<option value="orangutan">orangutan</option>
+				<option value="panther chameleon">panther chameleon</option>
+				<option value="parakeets">parakeets</option>
+				<option value="parrots">parrots</option>
+				<option value="pupfish">pupfish</option>
+				<option value="rabbits">rabbits</option>
+				<option value="rats">rats</option>
+				<option value="rhesus macaque">rhesus macaque</option>
+				<option value="rhinoceros iguana">rhinoceros iguana</option>
+				<option value="rotifers">rotifers</option>
+				<option value="salamanders">salamanders</option>
+				<option value="sea anemone">sea anemone</option>
+				<option value="seals">seals</option>
+				<option value="shore crabs">shore crabs</option>
+				<option value="skunks">skunks</option>
+				<option value="sloths">sloths</option>
+				<option value="snakes">snakes</option>
+				<option value="ball python">ball python</option>
+				<option value="corn and rat snakes">corn and rat snakes</option>
+				<option value="milksnake">milksnake</option>
+				<option value="western hognose snake">western hognose snake</option>
+				<option value="snow leopards">snow leopards</option>
+				<option value="soft-shell clam">soft-shell clam</option>
+				<option value="spiders">spiders</option>
+				<option value="spotted hyenas">spotted hyenas</option>
+				<option value="squid, octopus, cuttlefish">
+					squid, octopus, cuttlefish
+				</option>
+				<option value="syrian hamster">syrian hamster</option>
+				<option value="tapirs">tapirs</option>
+				<option value="termites">termites</option>
+				<option value="tortoise">tortoise</option>
+				<option value="unicorns">Unicorns</option>
+				<option value="wombat">Wombat</option>
+				<option value="woodlice">Woodlice</option>
+			</select>
 
-		<select name="animals" id="animals">
-			<option value="random">Random Animal</option>
-			<option value="african wild dogs">African wild dogs</option>
-			<option value="aliens">Aliens</option>
-			<option value="american badger">American Badger</option>
-			<option value="ammonite">Ammonite</option>
-			<option value="arachnids">Arachnids</option>
-			<option value="baboons">Baboons</option>
-			<option value="bats">Bats</option>
-			<option value="bearded dragon">Bearded Dragon</option>
-			<option value="birds">Birds</option>
-			<option value="black spinytail iguana">Black Spinytail Iguana</option>
-			<option value="blue mussels">Blue mussels</option>
-			<option value="bobcats">Bobcats</option>
-			<option value="bristle worms">Bristle worms</option>
-			<option value="burchells zebra">Burchell's zebra</option>
-			<option value="burmese python">Burmese python</option>
-			<option value="camel">Camel</option>
-			<option value="cheetah">Cheetah</option>
-			<option value="chimpanzees">Chimpanzees</option>
-			<option value="cockroaches">Cockroaches</option>
-			<option value="colobine monkeys">Colobine monkeys</option>
-			<option value="common whelks">Common whelks</option>
-			<option value="copperhead">Copperhead</option>
-			<option value="domestic cat">Domestic cat</option>
-			<option value="domestic goat">Domestic goat</option>
-			<option value="domestic hedgehogs">Domestic hedgehogs</option>
-			<option value="domestic pigs">Domestic pigs</option>
-			<option value="domestic sheep">Domestic sheep</option>
-			<option value="domesticated dogs">Domesticated Dogs</option>
-			<option value="elephants">Elephants</option>
-			<option value="european oysters">European oysters</option>
-			<option value="fancy goldfish">Fancy goldfish</option>
-			<option value="freshwater mussels">Freshwater mussels</option>
-			<option value="frogs">Frogs</option>
-			<option value="crested geckos">crested geckos</option>
-			<option value="giraffe">giraffe</option>
-			<option value="gorillas">gorillas</option>
-			<option value="gray fox">gray fox</option>
-			<option value="green iguana">Green Iguana</option>
-			<option value="grizzly bear">Grizzly bear</option>
-			<option value="guinea pigs">Guinea Pigs</option>
-			<option value="herring">herring</option>
-			<option value="horse">horse</option>
-			<option value="humans">humans</option>
-			<option value="isopods">Isopods (marine and terrestrial)</option>
-			<option value="lagomorphs">lagomorphs</option>
-			<option value="lemurs">lemurs</option>
-			<option value="lion">lion</option>
-			<option value="manatees">manatees</option>
-			<option value="mastodon">mastodon</option>
-			<option value="millipedes">millipedes</option>
-			<option value="moonsnails">moonsnails</option>
-			<option value="mustelids">mustelids</option>
-			<option value="orangutan">orangutan</option>
-			<option value="panther chameleon">panther chameleon</option>
-			<option value="parakeets">parakeets</option>
-			<option value="parrots">parrots</option>
-			<option value="pupfish">pupfish</option>
-			<option value="rabbits">rabbits</option>
-			<option value="rats">rats</option>
-			<option value="rhesus macaque">rhesus macaque</option>
-			<option value="rhinoceros iguana">rhinoceros iguana</option>
-			<option value="rotifers">rotifers</option>
-			<option value="salamanders">salamanders</option>
-			<option value="sea anemone">sea anemone</option>
-			<option value="seals">seals</option>
-			<option value="shore crabs">shore crabs</option>
-			<option value="skunks">skunks</option>
-			<option value="sloths">sloths</option>
-			<option value="snakes">snakes</option>
-			<option value="ball python">ball python</option>
-			<option value="corn and rat snakes">corn and rat snakes</option>
-			<option value="milksnake">milksnake</option>
-			<option value="western hognose snake">western hognose snake</option>
-			<option value="snow leopards">snow leopards</option>
-			<option value="soft-shell clam">soft-shell clam</option>
-			<option value="spiders">spiders</option>
-			<option value="spotted hyenas">spotted hyenas</option>
-			<option value="squid, octopus, cuttlefish">
-				squid, octopus, cuttlefish
-			</option>
-			<option value="syrian hamster">syrian hamster</option>
-			<option value="tapirs">tapirs</option>
-			<option value="termites">termites</option>
-			<option value="tortoise">tortoise</option>
-			<option value="unicorns">Unicorns</option>
-			<option value="wombat">Wombat</option>
-			<option value="woodlice">Woodlice</option>
-		</select>
+			<!-- buttons -->
 
-		<!-- <input type="text" name="" value=""> -->
-		<button type="button" name="button" id="getButton" class="button">
-			Get Flatufact
-		</button>
-
-		<div class="pics-right">
-			<img src="" alt="image here" class="border" id="animalImage" />
-			<p class="caption" id="animalCaption">Photo</p>
-		</div>
-		<section>
-			<ul class="animalFactsList" id="factoids">
-				<li>
-					<span class="factHeads">Animal name: </span
-					><span id="animalName"></span>
-				</li>
-				<li>
-					<span class="factHeads">Scientific name: </span
-					><span id="scientificName"></span>
-				</li>
-				<li>
-					<span class="factHeads">Does it fart?: </span
-					><span id="doesItFart"></span>
-				</li>
-				<li><span class="factHeads">Notes: </span><span id="notes"></span></li>
-				<li>
-					<span class="factHeads">Research links: </span
-					><span id="research"></span>
-				</li>
-				<li>
-					<span class="factHeads">Fartoligist: </span
-					><span id="fartoligist"></span>
-				</li>
-			</ul>
+			<!-- <input type="text" name="" value=""> -->
+			<button type="button" name="button" id="getButton" class="button">
+				get flatufact
+			</button>
+			<button type="button" name="buttonRando" id="randButton" class="button">
+				random
+			</button>
 		</section>
 
-		<script type="text/javascript" src="js/main.js"></script>
-	</body>
+		<section class="hero-wrapper">
+			<section class="row">
+				<!-- the facts -->
+				<section class="column">
+					<section class="leftFacts">
+						<ul class="animalFactsList" id="factoids">
+							<li>
+								<span class="factHeads">Animal name: </span><span id="animalName">Catus</span>
+							</li>
+							<li>
+								<span class="factHeads">Scientific name: </span><span id="scientificName">Mittens
+									McKittens</span>
+							</li>
+							<li>
+								<span class="factHeads">Does it fart?: </span><span id="doesItFart">Bigtime</span>
+							</li>
+							<li>
+								<span class="factHeads">Notes: </span><span id="notes">Seems to worsen in vicinity of
+									human
+									face. Silent but deadly</span>
+							</li>
+							<li>
+								<span class="factHeads">Research links: </span><span
+									id="research">https://authenticapets.com/en/blog/do-cats-fart</span>
+							</li>
+							<li>
+								<span class="factHeads">Fartoligist: </span><span id="fartoligist">@Captain_Herder
+									@Scare</span>
+							</li>
+						</ul>
+					</section>
+				</section>
+				<!-- hero shot -->
+				<section class="column">
+					<section class="rightPics">
+						<p class="caption" id="animalCaption">mittens</p>
+
+						<img src="images/loan-7AIDE8PrvA0-unsplash.jpg" alt="image here" class="border heroAnimal"
+							id="animalImage" />
+
+					</section>
+				</section>
+			</section>
+		</section>
+
+	</main>
+	<footer>
+		<!-- TBD -->
+		<!-- something about references -->
+	</footer>
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+
 </html>

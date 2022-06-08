@@ -1,8 +1,35 @@
+/*
+font-family: 'Roboto', sans-serif;
+font-family: 'Source Code Pro', monospace;
+font-family: 'Spicy Rice', cursive;
+font-family: 'Work Sans', sans-serif;
+*/
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+:root {
+	--clr-primary: #654236;
+	--clr-dark: #0c0e36;
+	--clr-gray: #93a3bc;
+	--clr-light: #db995a;
+	--clr-accent: #48acf0;
+	--clr-accent-dark: #dd6031;
+	--fw-light: 300;
+	--fw-normal: 400;
+	--fw-bold: 700;
+	--fw-black: 900;
+	--grid: minmax(1em, 10%) minmax(10rem, 22ch) minmax(10rem, 23ch) minmax(1em, 3fr) max-content;
+}
+
 /* Box Model Hack */
-* {
+/* * {
 	box-sizing: border-box;
 	font-family: "Source Sans Pro", sans-serif;
-}
+} */
 
 /* Clear fix hack */
 .clearfix:after {
@@ -22,105 +49,220 @@
 /* COLOUR STYLES
 /*******************************************/
 madeUp {
-	color: #eeeded;
-	color: #5c6e91;
-	color: #8f384d;
-	color: #dd9866;
+	color: #48acf0;
+	color: #654236;
+	color: #93a3bc;
+	color: #db995a;
+	color: #dd6031;
 }
 
 /******************************************
 /* BASE STYLES
 /*******************************************/
 
-body {
+/* body {
 	display: block;
 	margin: auto;
 	background-color: #dd9866;
+} */
+
+body {
+	margin: 0;
+	font-family: "Work Sans", sans-serif;
+	font-size: 1.125rem;
+	color: var(--clr-dark);
+	line-height: 1.6;
+	/* background: gray; */
+}
+
+header {
+	text-align: center;
+	margin: 0;
 }
 
 /******************************************
 /* LAYOUT
 /*******************************************/
-img {
-	display: block;
+
+.hero-wrapper {
+	display: flex;
+	margin: 15px;
+	align-content: center;
+	/* background-color: red; */
+}
+
+.row {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 100%;
+	/* align-content: center; */
+	justify-content: center;
+	/* background-color: #48acf0; */
+	/* justify-content: space-around; */
+}
+
+.column {
+	display: flex;
+	flex-direction: column;
+	flex-basis: auto;
+	justify-content: center;
+	margin: 0 50px;
+}
+
+.leftFacts {
+	display: flex;
+	flex-basis: auto;
+	flex-direction: column;
+	flex-grow: 2;
+	background-color: #f5f5ef80;
+	border-radius: 10px;
+	max-width: 500px;
+	padding: 0 10px;
+}
+
+.rightPics {
+	display: flex;
+	flex-direction: column;
+	flex-basis: auto;
+	flex-grow: 1;
+}
+
+.buttonBox {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: center;
+}
+
+img.heroAnimal {
+	display: flex;
+	justify-content: flex-end;
 	margin: 0 auto;
-	height: 300px;
+	/* max-height: 480px; */
+	max-width: 100%;
+	border-radius: 50%;
+	background-size: cover;
+	border: #db995a solid 6px;
+	max-width: 480px;
+	max-height: 480px;
+
+	border: 6px solid #db995a;
+	box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
 	margin-top: 30px;
 }
+
+body {
+	background-image: url(../images/unsplash_sztWS6R3UlA.png);
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: top;
+}
+
+.logo {
+	margin-top: .5em;
+	max-height: 4em;
+}
+
+/* Rectangle 3 */
+
+/* .backrangle {
+	position: absolute;
+	width: 858px;
+	height: 224px;
+	left: 230px;
+	top: 508px;
+
+	background: #db995a;
+	opacity: 0.5;
+	border-radius: 32px;
+} */
 
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
 
 body button.button {
-	min-width: 130px;
-	height: 40px;
-	color: #eeeded;
-	padding: 5px 10px;
-	font-weight: bold;
+	box-sizing: border-box;
+
+	height: 47px;
+
+	background: #DD6031;
+	border: 2px solid #654236;
+	border-radius: 22px;
+
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 28px;
+	text-align: center;
+
+	color: #E5E5E5;
+
+	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+	min-width: 180px;
+
 	cursor: pointer;
 	transition: all 0.3s ease;
-	position: relative;
-	display: block;
-	outline: none;
-	border-radius: 5px;
-	border: 2px solid #8f384d;
-	background: #8f384d;
-	margin: 10px auto;
+
+	margin: 10px 20px;
 }
+
 button.button:hover {
 	background: #eeeded;
-	color: #8f384d;
-	margin: 20px auto;
-	height: 80px;
+	color: #654236;
+	/* margin: 20px auto; */
+	/* height: 80px; */
 }
 
 label {
-	font-size: 2em;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.2em;
+	font-weight: 700;
+	margin-top: 20px;
+	padding-right: 5px;
 	display: block;
 	text-align: center;
 }
 
-body select#animals {
-	width: 50%;
-	height: 50px;
-	font-size: 2em;
-	line-height: 50px;
-	padding: 5px 10px;
-	border: 2px solid #8f384d;
-	border-radius: 5px;
-	display: block;
-	margin: 0 auto;
-	font-weight: 700;
-	outline: none;
-	color: #eeeded;
-	text-align: center;
-	background: #5c6e91;
-}
+.pulldown {
 
-h1 {
-	font-size: 2em;
-	font-weight: 700;
-	color: #8f384d;
-	margin: 0;
-	padding: 0;
-	text-align: center;
+    height: px;
+    padding: 5px 20px 5px 10px;
+    background: #48ACF0 url("select-arrows.svg") no-repeat right 16px center;
+    background-size: 10px;
+    transition: border-color .1s ease-in-out,box-shadow .1s ease-in-out;
+    border: 3px solid #ddd;
+    border-radius: 6px;
+}
+.pulldown:hover {
+    border: 3px solid #db995a;
+}
+.pulldown:focus {
+    border: 3px solid #654236;
+    box-shadow: 0 3px 5px 0 rgba(0,0,0,.2);
+    outline: none;
 }
 
 h2 {
+	font-family: 'Spicy Rice', cursive;
 	font-size: 5em;
 	font-weight: 700;
-	color: #8f384d;
-	margin: 0;
+	color: #654236;
+	margin-top: 100px;
 	padding: 0;
 	text-align: center;
+	text-shadow: #FFF 0px 0px 10px;
 }
 
 h3 {
 	font-size: 1.5em;
 	font-weight: 400;
-	color: #8f384d;
-	margin: 0;
+	color: #654236;
+
 	padding: 30px 30%;
 	text-align: center;
 }
@@ -130,29 +272,43 @@ ul {
 	line-height-step: 30;
 }
 
+
+
+
 #factoids {
 	text-align: left;
-	font-size: 1.5em;
+	font-size: 1.3em;
 	font-weight: 400;
 	line-height: 150%;
-	color: #8f384d;
+	color: #000;
 	display: block;
-	margin: 0 30%;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	/* margin: 0 30%; */
 	/* padding: 10px 30%; */
 }
 
 #factoids .factHeads {
-	font-weight: 700;
-	color: #000;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 900;
+	color: #654236;
 }
 
 #animalCaption {
 	text-transform: uppercase;
 	font-size: 3em;
-	font-weight: 700;
+	font-weight: 900;
+	line-height: 1;
 
-	color: #8f384d;
+	color: #db995a;
 	margin: 0;
-	padding: 30px 30%;
+	padding: 10px 0;
 	text-align: center;
+	text-shadow: #000 2px 2px 5px;
+}
+
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
 }
